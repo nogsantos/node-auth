@@ -67,7 +67,7 @@ $ npm i
         </tr>
         <tr>
             <td>Supertest</td>
-            <td>For request mocks on tests</td>
+            <td>For request on tests</td>
         </tr>
         <tr>
             <td>Bcryptjs</td>
@@ -80,6 +80,10 @@ $ npm i
         <tr>
             <td>Factory girl</td>
             <td>Factory generator helper (for tests)</td>
+        </tr>
+        <tr>
+            <td>Faker</td>
+            <td>Faker data generator (for tests)</td>
         </tr>
     </tbody>
 </table>
