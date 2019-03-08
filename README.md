@@ -77,6 +77,10 @@ $ npm i
             <td>Json Web Token</td>
             <td>Token generator</td>
         </tr>
+        <tr>
+            <td>Factory girl</td>
+            <td>Factory generator helper (for tests)</td>
+        </tr>
     </tbody>
 </table>
 
