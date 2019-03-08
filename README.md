@@ -31,6 +31,10 @@ Simple Nodejs authenticate project.
 
 ## Project dependencies
 
+```bash
+$ npm i
+```
+
 <table>
     <tbody>
         <tr>
