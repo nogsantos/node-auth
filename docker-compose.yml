@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  postgresql:
+    container_name: node-auth-db
+    image: nogsantos/postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - DEBUG=false
+      - PG_PASSWORD=123456
+      - DB_NAME=node-auth-db
+    volumes:
+      - type: bind
+        source: ./data/postgresql
+        target: /var/lib/postgresql
+    networks:
+      - node-auth
+volumes:
+  volume:
+networks:
+  node-auth:
+    driver: bridge
