@@ -55,6 +55,9 @@ $ npm i
         <tr>
             <td>Jest</td>
         </tr>
+        <tr>
+            <td>Dotenv</td>
+        </tr>
     </tbody>
 </table>
 
