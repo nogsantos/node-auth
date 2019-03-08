@@ -38,7 +38,7 @@ $ npm i
 <table>
     <tbody>
         <tr>
-            <th>Lib</th>
+            <th>Library</th>
         </tr>
         <tr>
             <td>Express</td>
@@ -51,6 +51,9 @@ $ npm i
         </tr>
         <tr>
             <td>PostgreSQL - pg</td>
+        </tr>
+        <tr>
+            <td>Jest</td>
         </tr>
     </tbody>
 </table>
@@ -97,4 +100,20 @@ $ ./node_modules/.bin/sequelize migration:create --name=create-users
 
 ```bash
 $ ./node_modules/.bin/sequelize db:migrate
+```
+
+## Jest
+
+### Init
+
+Runs only when the project is not configurate yet.
+
+```bash
+$  ./node_modules/.bin/jest --init
+```
+
+### run
+
+```bash
+$  node test
 ```
