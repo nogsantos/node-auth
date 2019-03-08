@@ -1,6 +1,7 @@
 {
 	"name": "node-auth",
 	"version": "0.1.0",
+	"private": true,
 	"description": "",
 	"main": "src/server.js",
 	"scripts": {
@@ -8,7 +9,8 @@
 		"dev": "./node_modules/.bin/nodemon src/server.js --ignore __tests__",
 		"pretest": "NODE_ENV=test ./node_modules/.bin/sequelize db:migrate",
 		"test": "NODE_ENV=test jest",
-		"posttest": "NODE_ENV=test ./node_modules/.bin/sequelize db:migrate:undo:all"
+		"posttest": "NODE_ENV=test ./node_modules/.bin/sequelize db:migrate:undo:all",
+		"lint": "./node_modules/.bin/eslint src"
 	},
 	"keywords": [],
 	"author": "Fabricio Nogueira <nogsantos@gmail.com> (http://fabricionogueira.me/)",
