@@ -24,9 +24,7 @@ describe('Authentication', () => {
 	});
 
 	it('should not authenticate with invalid credentials', async () => {
-		const user = await factory.create('User', {
-			password: '123123'
-		});
+		const user = await factory.create('User');
 
 		const response = await request(app)
 			.post('/sessions')
@@ -41,7 +39,9 @@ describe('Authentication', () => {
 	});
 
 	it('should return jwt token when authenticated', async () => {
-		const user = await factory.create('User');
+		const user = await factory.create('User', {
+			password: '123456'
+		});
 
 		const response = await request(app)
 			.post('/sessions')
