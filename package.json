@@ -22,6 +22,7 @@
 		"eslint-plugin-jest": "22.3.0",
 		"jest": "24.3.1",
 		"nodemon": "1.18.10",
-		"sequelize-cli": "5.4.0"
+		"sequelize-cli": "5.4.0",
+		"sqlite3": "4.0.6"
 	}
 }
