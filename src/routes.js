@@ -1,12 +1,12 @@
 const routes = require('express').Router();
 const authMiddleware = require('./app/middleware/auth');
 
-const SessionController = require('./app/controllers/SessionController');
+const AuthController = require('./app/controllers/AuthController');
 
 /**
  * Public routes
  */
-routes.post('/sessions', SessionController.store);
+routes.post('/auth', AuthController.store);
 
 /**
  * Private routes

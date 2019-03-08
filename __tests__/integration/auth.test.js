@@ -14,7 +14,7 @@ describe('Authentication', () => {
 		});
 
 		const response = await request(app)
-			.post('/sessions')
+			.post('/auth')
 			.send({
 				email: user.email,
 				password: '123123'
@@ -27,7 +27,7 @@ describe('Authentication', () => {
 		const user = await factory.create('User');
 
 		const response = await request(app)
-			.post('/sessions')
+			.post('/auth')
 			.send({
 				email: user.email,
 				password: '123'
@@ -44,7 +44,7 @@ describe('Authentication', () => {
 		});
 
 		const response = await request(app)
-			.post('/sessions')
+			.post('/auth')
 			.send({
 				email: user.email,
 				password: '123456'
