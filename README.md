@@ -73,6 +73,10 @@ $ npm i
             <td>Bcryptjs</td>
             <td>for Cryptography</td>
         </tr>
+        <tr>
+            <td>Json Web Token</td>
+            <td>Token generator</td>
+        </tr>
     </tbody>
 </table>
 
