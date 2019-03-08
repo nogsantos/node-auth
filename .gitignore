@@ -35,3 +35,6 @@ package-lock.json
 data/mongodb/**
 data/postgresql/**
 !.gitkeep
+
+
+__tests__/database.sqlite
