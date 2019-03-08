@@ -69,6 +69,10 @@ $ npm i
             <td>Supertest</td>
             <td>For request mocks on tests</td>
         </tr>
+        <tr>
+            <td>Bcryptjs</td>
+            <td>for Cryptography</td>
+        </tr>
     </tbody>
 </table>
 
