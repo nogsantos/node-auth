@@ -1,5 +1,7 @@
 # Nodejs Authenticate
 
+[![CircleCI](https://circleci.com/gh/nogsantos/node-auth.svg?style=svg)](https://circleci.com/gh/nogsantos/node-auth)
+
 Simple Nodejs authenticate project.
 
 ## Requirements
