@@ -39,24 +39,35 @@ $ npm i
     <tbody>
         <tr>
             <th>Library</th>
+            <th>Purpose</th>
         </tr>
         <tr>
             <td>Express</td>
+            <td>Server</td>
         </tr>
         <tr>
             <td>Sequelize</td>
+            <td>Database ORM</td>
         </tr>
         <tr>
             <td>Sequelize-cli</td>
+            <td>ORM cli</td>
         </tr>
         <tr>
             <td>PostgreSQL - pg</td>
+            <td>Application relational database</td>
         </tr>
         <tr>
             <td>Jest</td>
+            <td>Test suit</td>
         </tr>
         <tr>
             <td>Dotenv</td>
+            <td>Enviroment variables</td>
+        </tr>
+        <tr>
+            <td>Supertest</td>
+            <td>For request mocks on tests</td>
         </tr>
     </tbody>
 </table>
