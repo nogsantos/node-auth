@@ -1,15 +1,45 @@
+const request = require('supertest');
+const app = require('../../src/app');
 const { User } = require('../../src/app/models');
+const truncate = require('../utils/truncte');
 
 describe('Authentication', () => {
-	it('should create an user', async () => {
+	beforeEach(async () => {
+		await truncate();
+	});
+
+	it('should authenticate with valid credentials', async () => {
 		const user = await User.create({
 			name: 'Fabricio Nogueira',
 			email: 'nogsantos@gmail.com',
-			password_hash: '123456'
+			password: '123456'
 		});
 
-		console.log('user', user);
+		const response = await request(app)
+			.post('/sessions')
+			.send({
+				email: user.email,
+				password: '123456'
+			});
 
-		expect(user.email).toBe('nogsantos@gmail.com');
+		expect(response.status).toBe(200);
+	});
+
+	it('should not authenticate with invalid credentials', async () => {
+		const user = await User.create({
+			name: 'Fabricio Nogueira',
+			email: 'nogsantos@gmail.com',
+			password: '123456'
+		});
+
+		const response = await request(app)
+			.post('/sessions')
+			.send({
+				email: user.email,
+				password: '123'
+			});
+
+		expect(response.body.message).toBe('Incorrect credentials');
+		expect(response.status).toBe(401);
 	});
 });
