@@ -1,6 +1,7 @@
 /**
  * This code is repeted to use on tests. When the tests runs, the app context is not present.
  */
+require('module-alias/register');
 require('dotenv').config({
 	path: process.env.NODE_ENV === 'test' ? '.env.test' : '.env'
 });
