@@ -21,7 +21,7 @@ module.exports = {
 	collectCoverage: true,
 
 	// An array of glob patterns indicating a set of files for which coverage information should be collected
-	collectCoverageFrom: ['src/**', '!src/database/migrations/**'],
+	collectCoverageFrom: ['src/**', '!src/database/migrations/**', '!src/app.js', '!src/routes.js', '!src/server.js'],
 
 	// The directory where Jest should output its coverage files
 	coverageDirectory: '__tests__/coverage',
@@ -76,7 +76,12 @@ module.exports = {
 	// ],
 
 	// A map from regular expressions to module names that allow to stub out resources with a single module
-	// moduleNameMapper: {},
+	moduleNameMapper: {
+		'@controllers(.*)$': '<rootDir>/src/app/controllers/$1',
+		'@models(.*)$': '<rootDir>/src/app/models/$1',
+		'@middleware(.*)$': '<rootDir>/src/app/middleware/$1',
+		'@config(.*)$': '<rootDir>/src/config/$1'
+	},
 
 	// An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
 	// modulePathIgnorePatterns: [],
