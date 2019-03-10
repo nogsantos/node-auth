@@ -1,7 +1,7 @@
 const routes = require('express').Router();
-const authMiddleware = require('./app/middleware/auth');
+const authMiddleware = require('@middleware/auth');
 
-const AuthController = require('./app/controllers/AuthController');
+const AuthController = require('@controllers/AuthController');
 
 /**
  * Public routes
