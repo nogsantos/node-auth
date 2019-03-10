@@ -1,7 +1,7 @@
 /**
  * Always clean the database after tests.
  */
-const { sequelize } = require('../../src/app/models');
+const { sequelize } = require('@models');
 
 module.exports = () => {
 	return Promise.all(

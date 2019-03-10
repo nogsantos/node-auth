@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
-const { User } = require('../../src/app/models');
-const truncate = require('../utils/truncte');
+const { User } = require('@models');
+const truncate = require('@testUtils/truncte');
 
 describe('User', () => {
 	beforeEach(async () => {

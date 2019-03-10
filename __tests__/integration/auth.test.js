@@ -1,6 +1,6 @@
 const request = require('supertest');
-const app = require('../../src/app');
-const truncate = require('../utils/truncte');
+const app = require('@app');
+const truncate = require('@testUtils/truncte');
 const factory = require('../factories');
 
 describe('Authentication', () => {
