@@ -40,52 +40,36 @@ $ npm i
 <table>
     <tbody>
         <tr>
-            <th>Library</th>
+            <th>Name</th>
             <th>Purpose</th>
         </tr>
         <tr>
-            <td>Express</td>
-            <td>Server</td>
+            <td><a href="http://docs.sequelizejs.com/" target="_blank">Sequelize</a></td>
+            <td>Database ORM for Node</td>
         </tr>
         <tr>
-            <td>Sequelize</td>
-            <td>Database ORM</td>
+            <td><a href="https://github.com/sequelize/cli#documentation" target="_blank">Sequelize-cli</a></td>
+            <td>Sequelize Command Line Interface (CLI)</td>
         </tr>
         <tr>
-            <td>Sequelize-cli</td>
-            <td>ORM cli</td>
+            <td><a href="https://jestjs.io/docs/en/getting-started" target="_blank">Jest</a></td>
+            <td>JavaScript Testing Framework</td>
         </tr>
         <tr>
-            <td>PostgreSQL - pg</td>
-            <td>Application relational database</td>
+            <td><a href="https://www.npmjs.com/package/supertest" target="_blank">Supertest</a></td>
+            <td>HTTP assertions made easy via <a href="http://visionmedia.github.io/superagent/" target="_blank">superagent</a>.</td>
         </tr>
         <tr>
-            <td>Jest</td>
-            <td>Test suit</td>
+            <td><a href="https://www.npmjs.com/package/bcryptjs" target="_blank">Bcryptjs</a></td>
+            <td>Optimized bcrypt in JavaScript</td>
         </tr>
         <tr>
-            <td>Dotenv</td>
-            <td>Enviroment variables</td>
+            <td><a href="https://www.npmjs.com/package/factory-girl" target="_blank">factory-girl</a></td>
+            <td>Is a factory library for Node.js</td>
         </tr>
         <tr>
-            <td>Supertest</td>
-            <td>For request on tests</td>
-        </tr>
-        <tr>
-            <td>Bcryptjs</td>
-            <td>for Cryptography</td>
-        </tr>
-        <tr>
-            <td>Json Web Token</td>
-            <td>Token generator</td>
-        </tr>
-        <tr>
-            <td>Factory girl</td>
-            <td>Factory generator helper (for tests)</td>
-        </tr>
-        <tr>
-            <td>Faker</td>
-            <td>Faker data generator (for tests)</td>
+            <td><a href="https://www.npmjs.com/package/faker" target="_blank">faker</a></td>
+            <td>Generate massive amounts of fake data in the browser and node.js</td>
         </tr>
     </tbody>
 </table>
