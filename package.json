@@ -6,7 +6,7 @@
 	"main": "src/server.js",
 	"scripts": {
 		"start": "node src/server.js",
-		"dev": "./node_modules/.bin/nodemon src/server.js --ignore __tests__",
+		"dev": "NODE_ENV=DEV ./node_modules/.bin/nodemon src/server.js --ignore __tests__",
 		"pretest": "NODE_ENV=test ./node_modules/.bin/sequelize db:migrate",
 		"test": "NODE_ENV=test jest",
 		"posttest": "NODE_ENV=test ./node_modules/.bin/sequelize db:migrate:undo:all",
@@ -17,6 +17,8 @@
 	"license": "MIT",
 	"dependencies": {
 		"bcryptjs": "2.4.3",
+		"body-parser": "1.18.3",
+		"cors": "2.8.5",
 		"dotenv": "6.2.0",
 		"express": "4.16.4",
 		"jsonwebtoken": "8.5.0",
