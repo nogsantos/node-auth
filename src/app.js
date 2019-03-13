@@ -2,7 +2,7 @@ require('module-alias/register');
 require('dotenv').config({
 	path: process.env.NODE_ENV === 'test' ? '.env.test' : '.env'
 });
-
+const log = require('debug')('node-auth:app');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -37,9 +37,9 @@ class AppController {
 				next();
 				const end = new Date().getTime();
 				const timer = end - start;
-				console.log('Request start', `${start}ms`);
-				console.log('Request end', `${end}ms`);
-				console.log('Request Timer', `${timer}ms`);
+				log('Request start', `${start}ms`);
+				log('Request end', `${end}ms`);
+				log('Request Timer', `${timer}ms`);
 			});
 		}
 	}
